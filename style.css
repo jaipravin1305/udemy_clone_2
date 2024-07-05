@@ -54,6 +54,10 @@ body {
   align-items: center;
 }
 
+.navbar__s4{
+  display: none;
+}
+
 .mylearning{
   position: relative;
   cursor: pointer;
@@ -107,10 +111,10 @@ body {
 }
 
 .sale-image__offer{
-  width: 25%;
+  width: 30%;
   position: absolute;
-  top: 20%;
-  left: 10%;
+  top: 10%;
+  left: 5%;
   background-color: white;
   border: solid black 2px;
   padding: 10px;
@@ -142,13 +146,14 @@ body {
 }
 
 .cards{
-  width: 300px;
-  margin-top: 10px;
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin: 5px;
 }
 
 .cards img{
   width: 100%;
-
+  height: 50%;
 }
 
 .topic{
@@ -200,4 +205,25 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 800px){
+  body{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .cards{
+    flex-basis: 40%;
+  }
+
+  .categories, .navbar__s2, .navbar__s3{
+    display: none;
+  }
+
+  .navbar__s4{
+    display: block;
+  }
+
 }
